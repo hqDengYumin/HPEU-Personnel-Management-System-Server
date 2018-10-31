@@ -11,7 +11,7 @@
 
 Route::get('think', function () {
     return 'hello,ThinkPHP5!';
-});
+}); //仅针对get方式
 
 Route::get('hello/:name', 'index/hello');
 
