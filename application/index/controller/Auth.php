@@ -8,6 +8,11 @@
 
 namespace app\index\controller;
 
+use think\Request;
+
+use think\facade\Env;
+
+
 /**
  * Class Auth
  * 权限拦截类
