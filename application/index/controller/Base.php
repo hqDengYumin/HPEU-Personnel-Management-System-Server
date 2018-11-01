@@ -11,6 +11,10 @@ namespace app\index\controller;
 // 允许跨域ajax
 header('Access-Control-Allow-Origin:*');
 
+use think\Request;
+
+use think\facade\Env;
+
 use think\Controller;
 
 /**
@@ -67,7 +71,5 @@ class Base extends Controller
     $this->app_path = $this->env::get('app_path');
     $this->enrty_path = $this->root_path . "public";
     $this->static_path = $this->enrty_path . "\static";
-    // 时区设置
-    date_default_timezone_set("Asia/Shanghai");
   }
 }
